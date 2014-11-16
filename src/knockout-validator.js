@@ -60,7 +60,7 @@
 
   function clear(model) {
     if (model.__recur__ === recur) return;
-    
+
     model.__recur__ = recur;
 
     if (typeof model.Clear == 'function') {
@@ -78,13 +78,13 @@
     if (model.__recur__ === recur) return true;
 
     model.__recur__ = recur;
-    
+
     if (typeof model.hasToValidate == 'function') {
       if (!model.hasToValidate()) return true;
     }
-    
+
     if (typeof model.validate == 'function') return model.validate();
-    
+
     var isValid = true;
     for (var p in model) {
       if (isBuiltInObject(model[p]) || !ko.isObservable(model[p])) continue;
@@ -95,7 +95,7 @@
 
   ko.extenders.required = function(target, config) {
     if (!target || !config) throw 'target and config values can not be null';
-    
+
     addValidation(target);
 
     var message =  config.message || 'This field is required';
@@ -118,7 +118,7 @@
     addValidation(target);
 
     var message = cfg.message || 'This field is invalid';
-    var pattern = typeof config.pattern === 'string' ? 
+    var pattern = typeof config.pattern === 'string' ?
     new RegExp(config.pattern) : config.pattern instanceof RegExp ?
     config.pattern : '';
 

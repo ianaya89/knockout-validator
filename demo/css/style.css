@@ -1,0 +1,9 @@
+body {
+  background-color: #f3f3f3;
+  color: #3d3d3d;
+  font-family: sans-serif;
+}
+
+small.error {
+  color: red;
+}

@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "main": "dist/knockout-validator.js",
   "ignore": [
-    ".jshintrc"
+    ".jshintrc",
+    "bower_components"
   ],
   "dependencies": {
-    "knockout": "*3.1.0"
+    "knockout": "3.2.0"
   }
 }

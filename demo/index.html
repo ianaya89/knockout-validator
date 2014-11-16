@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Knockout Validator Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Knockout Validator Demo</h1>
+
+<div>
+<label>
+  Name:
+  <input type="text" data-bind="value: name">
+  <small class="error" data-bind="text: name.errorMessage, visible: name.hasError"></small>
+</label>
+</div>
+
+<script src="js/knockout.js"></script>
+<script src="js/knockout-validator.min.js"></script>
+<script src="js/vm.js"></script>
+</body>
+</html>
