@@ -1,0 +1,11 @@
+{
+  "name": "Knockout Validator",
+  "version": "0.0.1",
+  "main": "dist/knockout-validator.js",
+  "ignore": [
+    ".jshintrc"
+  ],
+  "dependencies": {
+    "knockout": "*3.1.0"
+  }
+}
